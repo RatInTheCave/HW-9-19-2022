@@ -1,0 +1,45 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+    Scanner nm = new Scanner(System.in);
+
+     String Name;
+        System.out.println("What is your name?");
+        Name = nm.nextLine();
+        System.out.println("Hello " +   Name);
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("How old are you");
+        int Age = sc.nextInt();{
+        if (Age < 13)
+            System.out.println("I don't know what book to suggest you");
+        else if (Age < 17)
+            System.out.println("Okay, and what is your favorite genre?");
+        else if (Age < 26)
+            System.out.println("Okay, and what is your favorite genre?");
+        else
+            System.out.println("I do not know what book to suggest you");   }
+        System.out.println("Reply with (< 0) for Fantasy and (1 >) for Sci-Fi");
+        Scanner in = new Scanner(System.in);
+       int genre = in.nextInt();
+        {  if (genre < 0)
+       System.out.println("You like Fantasy then");
+       else
+       System.out.println("You like Sci-Fi then");}
+       if ((Age > 13) & (Age < 17) & (genre < 0))
+       System.out.println("Judging by your age and favorite genre I would suggest you read ''Harry Potter'' ");
+       else if ((Age > 13) & (Age < 17) & (genre > -1))
+       System.out.println("Judging by your age and favorite genre I would suggest you read ''George's Secret Key '' book series");
+       else if ((Age > 16) & (Age < 25) & (genre < 0))
+            System.out.println("Judging by your age and favorite genre I would suggest you read ''Infinite and the Divine'' ");
+       else if ((Age > 16) & (Age < 25) & (genre > -1))
+            System.out.println("Judging by your age and favorite genre I would suggest you read ''Lord of the rings ''");
+       else
+            System.out.println("No idea");
+
+
+    }
+}
+// I honestly have no idea what I'm doing. I don't know how to work with things other than int because when I tried
+// it all crashed down. I need help
+//411 9!?4!$3 7#3 0nn^!$!4#
