@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Hello! How old are you? ");
+        int ageactivityvalue = sc.nextInt();
+        if(ageactivityvalue<7)
+            System.out.println("You should go to kindergarten then. Or perhaps you just sit at home all day?");
+        else if(ageactivityvalue<18)
+            System.out.println("I would guess you still go to school then. Hope you do well :) ");
+        else if(ageactivityvalue<22)
+            System.out.println("So do you go to a university or something?");
+        else if(ageactivityvalue<60)
+            System.out.println("Do you have a job or something then?");
+        else if (ageactivityvalue<123)
+            System.out.println("How's your retirement?");
+        else if (ageactivityvalue<150)
+            System.out.println("You are officially the oldest person alive! Congratulations, I guess.");
+        else
+            System.out.println("Are you immortal? I mean, it is cool, but I just feel you're lying :(.");
+
+    }
