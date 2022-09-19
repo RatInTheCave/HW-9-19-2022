@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner ex = new Scanner(System.in);
+        int value1 = ex.nextInt();
+        System.out.println("As an example, please type in a number");{
+            if (value1 > 0)
+                System.out.println("This is a natural number");
+            else if (value1 < 0)
+                System.out.println("This is not a natural number");
+            else
+                System.out.println("This is zero"); }
+        int value2 = ex.nextInt();
+        switch (value2) {
+            case 1:
+                System.out.println("example1");
+                break;
+            case 2:
+                System.out.println("example2");
+                break;
+        }
+
+
+
+        {
+            String e1 = "Value 1";
+            String e2 = "Value 2";
+            System.out.println(e1.equals(e2));
+        }
+        Scanner dx = new Scanner(System.in);
+        int value4 = dx.nextInt();;
+        boolean value3 = false;
+        if (value3) {
+            if (value4 > 0)
+            System.out.println("value4 > 0");
+        }  else{
+           System.out.println("value4 <= 0");
+
+        }
+
+
+    }
+}
